@@ -8,7 +8,6 @@ def unique_morse_representations(words)
     abc_hash = Hash[abc.zip(morse)]
     words.map do |word| 
         morse_word = ""
-        binding.pry
         letters = word.split("")
         letters.each do |letter|
             morse_word.concat(abc_hash[letter])
